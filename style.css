@@ -9,6 +9,11 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -21,12 +26,15 @@ body {
   background: #fff;
   color: black;
   line-height: 1.6;
+  
 }
 
 img{
   max-width: 100%;
 }
 
+
+/* Utility classes */
 
 .container {
   padding: 0 var(--gap);
@@ -213,7 +221,7 @@ cursor: pointer;
 }
 
 
-.filters button span{
+.filters button span:first-child{
   position: absolute;
   margin-right: 5px;
   top: 50%;
@@ -229,7 +237,8 @@ cursor: pointer;
   color: var(--primary-color);
 }
 
-.filters button p{
+.filters button span:last-child{
+  display: inline-block;
 margin-left: 38px;
 margin-right: 14px;
 }
